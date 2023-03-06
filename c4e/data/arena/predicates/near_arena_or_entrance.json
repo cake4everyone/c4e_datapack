@@ -1,0 +1,13 @@
+{
+  "condition": "alternative",
+  "terms": [
+    {
+      "condition": "reference",
+      "name": "arena:near_arena"
+    },
+    {
+      "condition": "reference",
+      "name": "arena:near_entranceroom"
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+{
+    "condition": "alternative",
+    "terms": [
+        {
+            "condition": "entity_properties",
+            "entity": "this",
+            "predicate": {
+                "nbt": "{Item:{tag:{Unbreakable:1b,Enchantments:[{id:\"minecraft:vanishing_curse\",lvl:1s}]}}}",
+                "type": "minecraft:item"
+            }
+        }
+    ]
+}

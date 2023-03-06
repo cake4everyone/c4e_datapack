@@ -1,0 +1,7 @@
+execute if entity @s[team=arena_red] as @a[tag=arena_ingame,team=arena_red] at @s run particle dust 0.7 0 0 1.2 ~ ~1.5 ~ .5 .75 .5 1 5 force @a[tag=arena_ingame,team=arena_red,distance=.3..]
+execute if entity @s[team=arena_green] as @a[tag=arena_ingame,team=arena_green] at @s run particle dust 0 0.7 0 1.2 ~ ~1.5 ~ .5 .75 .5 1 5 force @a[tag=arena_ingame,team=arena_green,distance=.3..]
+execute if entity @s[team=arena_blue] as @a[tag=arena_ingame,team=arena_blue] at @s run particle dust 0.2 0.2 1 1.2 ~ ~1.5 ~ .5 .75 .5 1 5 force @a[tag=arena_ingame,team=arena_blue,distance=.3..]
+execute if entity @s[team=arena_yellow] as @a[tag=arena_ingame,team=arena_yellow] at @s run particle dust 0.85 0.9 0 1.2 ~ ~1.5 ~ .5 .75 .5 1 5 force @a[tag=arena_ingame,team=arena_yellow,distance=.3..]
+execute if entity @s[team=arena_cyan] as @a[tag=arena_ingame,team=arena_cyan] at @s run particle dust 0 0.9 0.9 1.2 ~ ~1.5 ~ .5 .75 .5 1 5 force @a[tag=arena_ingame,team=arena_cyan,distance=.3..]
+execute if entity @s[team=arena_purple] as @a[tag=arena_ingame,team=arena_purple] at @s run particle dust 0.9 0.2 0.9 1.2 ~ ~1.5 ~ .5 .75 .5 1 5 force @a[tag=arena_ingame,team=arena_purple,distance=.3..]
+execute if entity @s[team=arena_pink] as @a[tag=arena_ingame,team=arena_pink] at @s run particle dust 0.9 0 0.9 1.2 ~ ~1.5 ~ .5 .75 .5 1 5 force @a[tag=arena_ingame,team=arena_pink,distance=.3..]

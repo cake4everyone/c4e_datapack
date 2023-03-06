@@ -1,0 +1,21 @@
+{
+  "type":"minecraft:crafting_shaped",
+  "group":"custom_slaps_to_blocks",
+  "pattern":
+  [
+    "#",
+    "#"
+  ],
+  "key":
+  {
+    "#":
+    {
+      "item":"minecraft:smooth_stone_slab"
+    }
+  },
+  "result":
+  {
+    "count":1,
+    "item":"minecraft:smooth_stone"
+  }
+}

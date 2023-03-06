@@ -1,0 +1,5 @@
+execute as @e[type=item,nbt={Item: {id: "minecraft:bat_spawn_egg", Count: 2b, tag: {CustomModelData: 10001, EntityTag: {id: "minecraft:armor_stand", Tags: ["elev", "elev_remove"]}}}},limit=1,sort=nearest] run tag @s add kill
+execute as @e[type=item,nbt={Item: {id: "minecraft:command_block", Count: 2b, tag: {CustomModelData: 10002}}},limit=1,sort=nearest] run tag @s add kill
+particle minecraft:dust 0.1 0 0.2 1 ~ ~0.4 ~ 0.0625 0.0625 0.0625 1 5
+playsound minecraft:custom.elevator.craft master @a[distance=..10] ~ ~ ~ 100 1.6
+execute as @p run summon item ~ ~ ~ {Item: {id: "minecraft:bat_spawn_egg", Count: 2b, tag: {display: {Name: '{"translate":"custom.elevator.item.elevator_cage","italic":false}'}, HideFlags: 1, CustomModelData: 10003, Enchantments: [{id: "minecraft:binding_curse", lvl: 1s}], EntityTag: {id: "minecraft:armor_stand", Marker: 1b, CustomNameVisible: 0b, NoGravity: 1b, Invisible: 1b, NoBasePlate: 1b, PersistenceRequired: 1b, Tags: ["elev", "elev_marker", "new"], ArmorItems: [{}, {}, {}, {id: "command_block", Count: 1b, tag: {CustomModelData: 10000}}], CustomName: '{"text":""}', Rotation: [0f, 0f]}}}, PickupDelay: 10s}

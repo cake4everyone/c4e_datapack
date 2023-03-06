@@ -1,0 +1,13 @@
+{
+  "condition": "alternative",
+  "terms": [
+    {
+      "condition": "reference",
+      "name": "arena:in_arena"
+    },
+    {
+      "condition": "reference",
+      "name": "arena:in_entranceroom"
+    }
+  ]
+}

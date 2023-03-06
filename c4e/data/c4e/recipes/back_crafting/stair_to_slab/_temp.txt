@@ -1,0 +1,20 @@
+{
+  "type":"minecraft:crafting_shaped",
+  "group":"custom_stairs_to_slaps",
+  "pattern":
+  [
+    "#"
+  ],
+  "key":
+  {
+    "#":
+    {
+      "item":"minecraft:_stairs"
+    }
+  },
+  "result":
+  {
+    "count":1,
+    "item":"minecraft:_slab"
+  }
+}

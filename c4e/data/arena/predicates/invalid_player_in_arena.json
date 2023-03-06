@@ -1,0 +1,37 @@
+{
+  "condition": "inverted",
+  "term": {
+    "condition": "alternative",
+    "terms": [
+      {
+        "condition": "inverted",
+        "term": {
+          "condition": "reference",
+          "name": "arena:in_arena"
+        }
+      },
+      {
+        "condition": "reference",
+        "name": "arena:in_arena_team"
+      },
+      {
+        "condition": "entity_properties",
+        "entity": "this",
+        "predicate": {
+          "player": {
+            "gamemode": "creative"
+          }
+        }
+      },
+      {
+        "condition": "entity_properties",
+        "entity": "this",
+        "predicate": {
+          "player": {
+            "gamemode": "spectator"
+          }
+        }
+      }
+    ]
+  }
+}
