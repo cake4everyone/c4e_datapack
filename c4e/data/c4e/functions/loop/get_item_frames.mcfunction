@@ -15,4 +15,4 @@ execute as @e[type=#c4e:item_frames,tag=!modify,distance=..10,limit=1,sort=neare
 # Functionally a kind of "break" in a loop. Increase the count to max, to not loop further.
 # But only if there is no un modified item_frames
 execute store result score @s tmp if entity @e[type=#c4e:item_frames,tag=modify,distance=..10]
-execute if score @s loop_count >= @s tmp run scoreboard players operation @s loop_count = @s loop_max
+execute if score @s c4e_lib_loop_count >= @s tmp run scoreboard players operation @s c4e_lib_loop_count = @s c4e_lib_loop_max

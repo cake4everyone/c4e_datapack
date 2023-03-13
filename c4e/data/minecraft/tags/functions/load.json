@@ -1,4 +1,4 @@
 {
-  "replace": true,
-  "values": [ "c4e:load","elevator:setup"]
+  "replace": false,
+  "values": ["c4e:load", "elevator:setup"]
 }
