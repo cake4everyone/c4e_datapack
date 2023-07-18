@@ -1,0 +1,17 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "group": "custom_slaps_to_blocks",
+    "pattern":
+    [
+        "##"
+    ],
+    "key": {
+        "#": {
+        "item": "minecraft:bamboo_slab"
+        }
+    },
+    "result": {
+        "count": 1,
+        "item": "minecraft:bamboo_block"
+    }
+}
