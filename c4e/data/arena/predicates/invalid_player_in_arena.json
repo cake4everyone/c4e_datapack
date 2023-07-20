@@ -1,20 +1,20 @@
 {
-  "condition": "inverted",
-  "term": {
-    "condition": "alternative",
-    "terms": [
-      {
-        "condition": "inverted",
-        "term": {
-          "condition": "reference",
-          "name": "arena:in_arena"
-        }
-      },
-      {
+  "condition": "all_of",
+  "terms": [
+    {
+        "condition": "reference",
+        "name": "arena:in_arena"
+    },
+    {
+      "condition": "inverted",
+      "term": {
         "condition": "reference",
         "name": "arena:in_arena_team"
-      },
-      {
+      }
+    },
+    {
+      "condition": "inverted",
+      "term": {
         "condition": "entity_properties",
         "entity": "this",
         "predicate": {
@@ -22,8 +22,11 @@
             "gamemode": "creative"
           }
         }
-      },
-      {
+      }
+    },
+    {
+      "condition": "inverted",
+      "term": {
         "condition": "entity_properties",
         "entity": "this",
         "predicate": {
@@ -32,6 +35,6 @@
           }
         }
       }
-    ]
-  }
+    }
+  ]
 }

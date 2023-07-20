@@ -1,26 +1,17 @@
 {
-    "condition": "inverted",
-    "term": {
-        "condition": "alternative",
-        "terms": [
-            {
-                "condition": "inverted",
-                "term": {
-                    "condition": "reference",
-                    "name": "c4e:in_spawn"
-                }
-            },
-            {
-                "condition": "inverted",
-                "term": {
-                    "condition": "entity_properties",
-                    "entity": "this",
-                    "predicate": {
-                        "nbt": "{Paper.SpawnReason:\"NATURAL\"}",
-                        "type": "#c4e:bad_at_spawn"
-                    }
-                }
+    "condition": "all_of",
+    "terms": [
+        {
+            "condition": "reference",
+            "name": "c4e:in_spawn"
+        },
+        {
+            "condition": "entity_properties",
+            "entity": "this",
+            "predicate": {
+                "nbt": "{Paper.SpawnReason:\"NATURAL\"}",
+                "type": "#c4e:bad_at_spawn"
             }
-        ]
-    }
+        }
+    ]
 }

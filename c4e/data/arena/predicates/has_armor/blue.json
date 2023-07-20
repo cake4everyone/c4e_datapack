@@ -1,76 +1,61 @@
 {
-  "condition": "inverted",
-  "term": {
-    "condition": "alternative",
-    "terms": [
-      {
-        "condition": "inverted",
-        "term": {
-          "condition": "entity_properties",
-          "entity": "this",
-          "predicate": {
-            "equipment": {
-              "head": {
-                "items": [
-                  "leather_helmet"
-                ],
-                "nbt": "{display:{color:5592575},Unbreakable:1b}"
-              }
-            }
-          }
-        }
-      },
-      {
-        "condition": "inverted",
-        "term": {
-          "condition": "entity_properties",
-          "entity": "this",
-          "predicate": {
-            "equipment": {
-              "chest": {
-                "items": [
-                  "leather_chestplate"
-                ],
-                "nbt": "{display:{color:5592575},Unbreakable:1b}"
-              }
-            }
-          }
-        }
-      },
-      {
-        "condition": "inverted",
-        "term": {
-          "condition": "entity_properties",
-          "entity": "this",
-          "predicate": {
-            "equipment": {
-              "legs": {
-                "items": [
-                  "leather_leggings"
-                ],
-                "nbt": "{display:{color:5592575},Unbreakable:1b}"
-              }
-            }
-          }
-        }
-      },
-      {
-        "condition": "inverted",
-        "term": {
-          "condition": "entity_properties",
-          "entity": "this",
-          "predicate": {
-            "equipment": {
-              "feet": {
-                "items": [
-                  "leather_boots"
-                ],
-                "nbt": "{display:{color:5592575},Unbreakable:1b}"
-              }
-            }
+  "condition": "all_of",
+  "terms": [
+    {
+      "condition": "entity_properties",
+      "entity": "this",
+      "predicate": {
+        "equipment": {
+          "head": {
+            "items": [
+              "leather_helmet"
+            ],
+            "nbt": "{display:{color:5592575},Unbreakable:1b}"
           }
         }
       }
-    ]
-  }
+    },
+    {
+      "condition": "entity_properties",
+      "entity": "this",
+      "predicate": {
+        "equipment": {
+          "chest": {
+            "items": [
+              "leather_chestplate"
+            ],
+            "nbt": "{display:{color:5592575},Unbreakable:1b}"
+          }
+        }
+      }
+    },
+    {
+      "condition": "entity_properties",
+      "entity": "this",
+      "predicate": {
+        "equipment": {
+          "legs": {
+            "items": [
+              "leather_leggings"
+            ],
+            "nbt": "{display:{color:5592575},Unbreakable:1b}"
+          }
+        }
+      }
+    },
+    {
+      "condition": "entity_properties",
+      "entity": "this",
+      "predicate": {
+        "equipment": {
+          "feet": {
+            "items": [
+              "leather_boots"
+            ],
+            "nbt": "{display:{color:5592575},Unbreakable:1b}"
+          }
+        }
+      }
+    }
+  ]
 }

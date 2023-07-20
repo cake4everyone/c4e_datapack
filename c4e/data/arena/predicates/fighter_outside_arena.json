@@ -1,19 +1,16 @@
 {
-  "condition": "inverted",
-  "term": {
-    "condition": "alternative",
-    "terms": [
-      {
+  "condition": "all_of",
+  "terms": [
+    {
+      "condition": "inverted",
+      "term": {
         "condition": "reference",
         "name": "arena:in_arena"
-      },
-      {
-        "condition": "inverted",
-        "term": {
-          "condition": "reference",
-          "name": "arena:in_arena_team"
-        }
       }
-    ]
-  }
+    },
+    {
+      "condition": "reference",
+      "name": "arena:in_arena_team"
+    }
+  ]
 }
