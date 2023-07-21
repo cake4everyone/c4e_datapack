@@ -6,16 +6,16 @@
       "dimension": "minecraft:overworld",
       "position": {
         "x": {
-          "min": 1,
-          "max": 64
+          "min": 4,
+          "max": 143
         },
         "y": {
-          "min": 70,
+          "min": 40,
           "max": 120
         },
         "z": {
-          "min": -153,
-          "max": -90
+          "min": -69,
+          "max": 147
         }
       }
     }
