@@ -7,3 +7,10 @@ scoreboard objectives add set_invisible dummy
 # used to show and hide a scorboard when sneaking
 team add sneak
 team modify sneak color white
+
+bossbar add c4e:spawn_banner "Spawn"
+bossbar set c4e:spawn_banner name {"text": "", "extra": [{"text": "SPAWN","bold": true},{"text": " - ","color": "gold"},{"text": "Hier kannst du nichts abbauen!","color": "gray"}]}
+bossbar set c4e:spawn_banner color purple
+bossbar set c4e:spawn_banner max 1
+bossbar set c4e:spawn_banner value 1
+bossbar set c4e:spawn_banner visible true
