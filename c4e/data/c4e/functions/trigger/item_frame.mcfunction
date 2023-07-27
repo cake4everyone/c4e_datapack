@@ -23,7 +23,7 @@ execute as @e[tag=visible] run tag @s remove visible
 execute store result score @s set_visible run execute if entity @e[tag=modify,nbt={Invisible: 0b}]
 execute store result score @s set_invisible run execute if entity @e[tag=modify,nbt={Invisible: 1b}]
 
-tellraw Kesuaheli [{"text": "[DEBUG] item_frame (@"},{"selector": "@s"},{"text": "): "}, {"text": "invisible="},{"score":{"name": "@s","objective": "set_visible","value": "-error-"}}, {"text": " visible="},{"score":{"name": "@s","objective": "set_invisible","value": "-error-"}}]
+tellraw @s[tag=debug] [{"text": "[DEBUG] item_frame (@"},{"selector": "@s"},{"text": "): "}, {"text": "invisible="},{"score":{"name": "@s","objective": "set_visible","value": "-error-"}}, {"text": " visible="},{"score":{"name": "@s","objective": "set_invisible","value": "-error-"}}]
 
 # display: nothing changed
 execute if score @s set_visible matches 0 if score @s set_invisible matches 0 run tellraw @s [{"text":"In einem Umkreis von 10 Blöcken um dich rum wurde: \n","color":"gold"},{"text":" • kein Item Frame verändert!","color":"red"}]
