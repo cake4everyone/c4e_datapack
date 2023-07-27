@@ -20,8 +20,8 @@ execute positioned ~ ~ ~ as @e[tag=modify,tag=visible] run data merge entity @s 
 execute as @e[tag=visible] run tag @s remove visible
 
 # counting for display
-execute store result score @s set_visible run execute if entity @e[tag=modify,nbt={Invisible: 1b}]
-execute store result score @s set_invisible run execute if entity @e[tag=modify,nbt={Invisible: 0b}]
+execute store result score @s set_visible run execute if entity @e[tag=modify,nbt={Invisible: 0b}]
+execute store result score @s set_invisible run execute if entity @e[tag=modify,nbt={Invisible: 1b}]
 
 tellraw Kesuaheli [{"text": "[DEBUG] item_frame (@"},{"selector": "@s"},{"text": "): "}, {"text": "invisible="},{"score":{"name": "@s","objective": "set_visible","value": "-error-"}}, {"text": " visible="},{"score":{"name": "@s","objective": "set_invisible","value": "-error-"}}]
 
