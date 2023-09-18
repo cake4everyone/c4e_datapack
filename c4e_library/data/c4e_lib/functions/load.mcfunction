@@ -1,5 +1,8 @@
 scoreboard objectives add tmp dummy
 
+## c4e_lib:general
+#declare storage c4e_lib:general
+
 ## c4e_lib:player_tags
 scoreboard objectives add playerID dummy
 scoreboard objectives add c4e_lib_sneak custom:sneak_time
